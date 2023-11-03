@@ -163,5 +163,4 @@ cython_debug/
 ckpt/
 outputs/
 clipseg/weights/
-training_data/
 *self*
