@@ -20,3 +20,5 @@ dependencies:
       - open_clip_torch==2.20.0
       - git+https://github.com/openai/CLIP.git
       - pillow==9.5.0
+      - diffusers
+      - transformers
