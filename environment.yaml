@@ -4,12 +4,12 @@ channels:
   - xformers
   - defaults
 dependencies:
-  - python=3.10
+  - python
   - pip
-  - cudatoolkit=11.7
-  - pytorch=2.0.0
-  - torchvision=0.15.0
-  - xformers=0.0.19
+  - cudatoolkit
+  - pytorch
+  - torchvision
+  - xformers
   - pip:
       - albumentations==1.3.1
       - pytorch-lightning==1.6.0
@@ -19,3 +19,4 @@ dependencies:
       - kornia==0.7.0
       - open_clip_torch==2.20.0
       - git+https://github.com/openai/CLIP.git
+      - pillow==9.5.0

@@ -39,6 +39,16 @@ We'll implement it in the near future.
 ## Environment
 Create and activate the conda environment:
 
+```bash
+# install miniconda
+mkdir -p ~/miniconda3
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+rm -rf ~/miniconda3/miniconda.sh
+~/miniconda3/bin/conda init bash
+bash
+```
+
 ```
 conda env create -f environment.yaml
 conda activate perfusion
@@ -46,6 +56,14 @@ conda activate perfusion
 
 ## Training
 Download the [SD V1.5](https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.ckpt) or [SD V2.1](https://huggingface.co/stabilityai/stable-diffusion-2-1-base/resolve/main/v2-1_512-ema-pruned.ckpt) to `./ckpt/`.
+
+```bash
+#SD1.5
+wget -P ./ckpt https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.ckpt
+
+# SD2.1
+wget -P ./ckpt https://huggingface.co/stabilityai/stable-diffusion-2-1-base/resolve/main/v2-1_512-ema-pruned.ckpt
+```
 
 Then run the commands:
 
